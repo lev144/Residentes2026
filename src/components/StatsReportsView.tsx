@@ -9,6 +9,7 @@ import {
 import { exportCensusToPdf } from '../utils/pdfGenerator';
 import { getSevenDaysOccupancyHistory } from '../utils/historyHelper';
 import { HistoricalOccupancyChart } from './HistoricalOccupancyChart';
+import { StayDaysDistributionChart } from './StayDaysDistributionChart';
 import {
   BarChart3,
   PieChart,
@@ -558,6 +559,9 @@ export const StatsReportsView: React.FC<StatsReportsViewProps> = ({
 
       {/* Visualización de Ocupación Histórica de los Últimos 7 Días (Recharts) */}
       <HistoricalOccupancyChart historyData={historyData} />
+
+      {/* Visualización de Distribución de Días de Estancia (Recharts BarChart) */}
+      <StayDaysDistributionChart patients={patients} />
 
       {/* Desglose Gráfico de Estados y Patologías Frecuentes */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
