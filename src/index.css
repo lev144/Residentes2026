@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Suavizado de transiciones para cambio de Modo Noche */
+html.dark {
+  color-scheme: dark;
+  background-color: #090d16;
+}
+
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}

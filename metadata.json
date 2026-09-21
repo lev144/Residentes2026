@@ -1,0 +1,6 @@
+{
+  "name": "Residentes2026 · Cirugía Pediátrica",
+  "description": "Residentes2026: Sistema interactivo y temático pediátrico para la gestión de 20 camas de cirugía infantil con control de días de estancia, triaje de estados, planes clínicos y reportes hospitalarios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
